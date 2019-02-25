@@ -374,7 +374,7 @@ val partitions = 4
 val vote = 0 // 0 = majority, 1 = consensus
 val k = 1
 
-val hte_bd_model = new HTE_BD(train, nTrees, partitions, vote, k, maxDepthRF, 48151623)
+val hte_bd_model = new HTE_BD(noisyData, nTrees, partitions, vote, k, maxDepthRF, 48151623)
 
 val hte_bd = hte_bd_model.runFilter()
 
